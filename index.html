@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Audio Player</title>
+    <link href="https://fonts.googleapis.com/css2?family=El+Messiri:wght@600;700&display=swap" rel="stylesheet">
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <link rel="stylesheet" href="./assets/css/style.css">
+</head>
+<body>
+    <div class="container flex">
+        <div class="img-container" id="cover" style="background: url();">
+        </div>
+        <div class="controls-container flex">
+            <ul class="flex">
+                <li class="false">
+                    <i class='bx bxs-heart'></i>
+                </li>
+                <li>
+                    <a id="target" target="_blank"><i class='bx bx-link-external'></i></a>
+                </li>
+                <li class="left" id="left">
+                    <i class='bx bx-chevrons-left'></i>
+                </li>
+                <li class="right" id="right">
+                    <i class='bx bx-chevrons-right'></i>
+                </li>
+            </ul>
+            <div class="btn-icon play" id="icon">
+                <i class='bx bx-play-circle'></i>
+                <audio id="audio"></audio>
+            </div>
+        </div>
+        <div dir="rtl" class="properties-container">
+            <span id="audio-title">محمود على البنا</span>
+            <h3 id="audio-info">قَالَ رَبِّ اشْرَحْ لِي صَدْرِي</h3>
+        </div>
+        <div class="player-container">
+            <div class="progress-container" id="progress-container">
+                <div class="progress" id="progress"></div>
+            </div>
+            <span id="time">0:0</span>
+        </div>
+    </div>
+    <script src="./assets/js/script.js"></script>
+</body>
+</html>

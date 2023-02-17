@@ -1,0 +1,142 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'El Messiri', sans-serif;
+    text-decoration: none;
+    list-style: none;
+}
+body{
+    background-color: #dfe7ef;
+    display: flex;  
+    align-items: center;
+    justify-content: center;
+    width: 100vw;
+    height: 100vh;
+}
+.flex{
+    display: flex;  
+    align-items: center;
+    justify-content: center;
+}
+.container{
+    background-color: #eef3f7;
+    position: relative;
+    flex-direction: column;
+    width: 410px;
+    height: 480px;
+    box-shadow: 0px 15px 35px -5px rgba(50, 88, 130, 0.32);
+    border-radius: 15px;
+    padding: 30px;  
+}
+/* Image - Start */
+.img-container{
+    position: absolute;
+    width: 70%;
+    height: 50%;
+    top: -10%;
+    left: 0;
+    right: 0;
+    margin: auto;
+    opacity: 1;
+    border-radius: 15px;
+    transition: .4s all ease-in-out;
+}
+.img-container::after , .img-container::before{
+    content: "";
+    background:  inherit;
+    background-size: cover;
+    background-position: center;
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    right: 0;
+    margin: auto;
+    box-shadow: 0px 10px 40px 0px rgba(76, 70, 124, 50%);
+    z-index: 2;
+    border-radius: 15px;
+}
+.img-container::before{
+    top: 30px;
+    z-index: 1;
+    transform: scale(0.9);
+    filter: blur(10px);
+    opacity: .9;
+}
+/* Image - End */
+
+/* Controls - Start */
+.controls-container{
+    width: 100%;
+    margin-top: 45%;
+    justify-content: space-between;
+}
+.controls-container i{
+    color: #acb8cc;
+    padding: .3em;
+    margin: .1em;
+    font-size: 2em;
+    cursor: pointer;
+    transition: 0.3s all ease-in-out;
+}
+.controls-container>ul i:hover{
+    background-color: #fff;
+    color: #532ab9;
+    border-radius: 50%;
+    box-shadow: 0px 0px 20px 0px #c3c3c380;
+}
+.controls-container>.btn-icon>i{
+    font-size: 3.5em;
+    padding: .1em;
+    color: #979797;
+}
+.controls-container>ul>li.true>i{
+    color: #f92e2e;
+}
+/* Controls - End */
+
+/* Properties - Start */
+.properties-container{
+    width: 90%;
+    margin: 0 auto;
+    font-size: 1em;
+    font-weight: 700;
+    text-transform: capitalize;
+}
+.properties-container>span{
+    color: #959595;
+}
+.properties-container>h3{
+    color: #444444;
+    margin: .5em 0;
+}
+/* Properties - End */
+
+/* Player - Start */
+.player-container{
+    width: 90%;
+    margin-top: 1em;
+}
+.progress-container, .progress{
+    background-color: #acb8cc;
+    width: 100%;
+    height: .2em;
+    border-radius: 50%;
+    overflow: hidden;
+    cursor: pointer;
+}
+.progress{
+    background-color: #e76969;
+    border-radius: 0%;
+    width: 0%;
+}
+.player-container>span{
+    color: #9b9b9b;
+    display: block;
+    font-weight: 700;
+    letter-spacing: 2px;
+    margin-top: .3em;
+}
+/* Player - End */
